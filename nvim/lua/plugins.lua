@@ -51,10 +51,14 @@ end
     use 'kyazdani42/nvim-web-devicons' -- File icons
 
     -- Telescope
-    use 'nvim-telescope/telescope.nvim'
+    -- use 'nvim-telescope/telescope.nvim'
+    use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.2',
+      require = { {'nvim-lua/plenary.nvim'} }
+    }
     use 'nvim-telescope/telescope-file-browser.nvim'
     -- fuzzy finding
-    use { "nvi-telescope/telescope-fzf-native.nvim", run = "make" } -- dependency for better sorting performance
+    use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" } -- dependency for better sorting performance
 
     -- AutoTAG and Atopair
     use 'windwp/nvim-autopairs'

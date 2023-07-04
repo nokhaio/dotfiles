@@ -5,7 +5,7 @@
 require('colorscheme.nightfly') 
 require('settings') 
 require('keymaps') 
-
+require('plugins')
 
 -- local has = vim.fn.has
 -- local is_mac = has "macunix"
