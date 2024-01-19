@@ -20,7 +20,9 @@ Import-Module oh-my-posh
 # oh-my-posh.exe init --shell pwsh --config  $env:POSH_THEMES_PATH\atomic.omp.json
 # oh-my-posh.exe init --shell pwsh --config  .\noah.omp.json | Invoke-Expression
 $omp_config = Join-Path $PSScriptRoot ".\noah.omp.json"
-#$omp_config = Join-Path $PSScriptRoot "~\.oh-my-posh\themes\1_shell.omp.json"
+# $omp_config = Join-Path $PSScriptRoot ".\catppuccin_mocha.omp.json"
+# $omp_config = Join-Path $PSScriptRoot ".\dracula.omp.json"
+# $omp_config = Join-Path $PSScriptRoot "~\.oh-my-posh\themes\1_shell.omp.json"
 oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 
 # Icons
@@ -35,11 +37,13 @@ Set-PSReadLineOption -PredictionSource History
 #
 # Alias  edit file $PROFILE.CurentUserCurrentHost >>> <<. $env:USERPROFILE\.config\powershell\user_profile.ps1
 Set-Alias vim nvim
+Set-Alias vi nvim-qt
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias grep findstr
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
+Set-Alias activenv .\env\Scripts\Activate.ps1
 
 # Path
 $env:VIRTUAL_ENV_DISABLE_PROMPT = 1

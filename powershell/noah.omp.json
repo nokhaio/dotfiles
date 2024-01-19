@@ -14,8 +14,7 @@
           "trailing_diamond": "",
           "foreground": "#ffffff",
           "background": "#0077c2",
-          "properties": {
-          }
+          "properties": {}
         },
         {
           "type": "root",
@@ -88,9 +87,9 @@
           "trailing_diamond": "\uE0B4",
           "background": "#306998",
           "foreground": "#FFE873",
-          "properties": { 
+          "properties": {
             "prefix": "\uE235 ",
-            "postfix": "" 
+            "postfix": ""
           },
           "template": " \uE235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
         },
@@ -105,7 +104,7 @@
           "properties": {
             "prefix": " \uf5ef ",
             "postfix": " "
-        }
+          }
         }
       ]
     },
