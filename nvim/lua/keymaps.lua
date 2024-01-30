@@ -1,23 +1,24 @@
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
+
 local keymap = vim.keymap.set
 local options = { silent = true }
 
 -- turn off search highlight
 keymap("n", ",<SPACE>", ":nohlsearch<CR>", options)
 
--- coment line
-keymap("n", "C-i", "norm ^i#")
-
 --keymap('n', '<leader>vr', ':so %<CR>')
-keymap('n', ',vr', ':so %<CR>')
+keymap("n", ",vr", ":so %<CR>")
 
 -- Типа 'Нажимает' на ESC при быстром нажатии jj, чтобы не тянутся
-keymap('i', 'jj', '<ESC>', options)
+keymap("i", "jj", "<ESC>", options)
 --
-keymap('i', '<C-e>', '')
+keymap("i", "<C-e>", "")
 
 -- Move selected line / block of text in visual mode
 --keymap("x", "K", ":move '<-2<CR>gv-gv", silent)
-keymap("x", "J", ":move '>+1<CR>gv-gv", silent)
+keymap("x", "J", ":move '>+1<CR>gv-gv", options)
 
 --keymap('v', '"y', '"*y', options)
 --keymap('n', '"y', '"*y', options)
@@ -25,24 +26,24 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", silent)
 --keymap('n', '"p', '"*p', options)
 --keymap('n', '"P', '"*P', options)
 
-
 -- Select all
-keymap('n', '<C-a>', 'gg<S-v>G')
+keymap("n", "<C-a>", "gg<S-v>G")
 
 -- New tab
-keymap('n', 'te', ':tabedit ')
-keymap('n', 'tnw', ':tabnew D:\\work_dir\\<CR>')
-keymap('n', 'tnh', ':tabnew $HOME<CR>')
-keymap('n', 'tnc', ':tabnew $HOME\\.config\\nvim\\<CR>')
+keymap("n", "te", ":tabedit")
+keymap("n", "<tab>", ":tabnext<Return>")
+keymap("n", "<s-tab", ":tabprev<Return>")
 
 -- Split window
-keymap('n', 'ss', ':split<Return><C-w>w')
-keymap('n', 'sv', ':vsplit<Return><C-w>w')
+keymap("n", "ss", ":split<Return>")
+keymap("n", "sv", ":vsplit<Return>")
 
 -- Move window
-keymap('n', '<Space>', '<C-w>w')
-keymap('', 'sh', '<C-w>h')
-keymap('', 'sk', '<C-w>k')
-keymap('', 'sj', '<C-w>j')
-keymap('', 'sl', '<C-w>l')
+keymap("n", "sh", "<C-w>h")
+keymap("n", "sk", "<C-w>k")
+keymap("n", "sj", "<C-w>j")
+keymap("n", "sl", "<C-w>l")
 
+-- Quotation mark around a word
+keymap("n", '""', 'viw<ESC>a"<ESC>hbi"<ESC>lel')
+keymap("n", "''", "viw<ESC>a'<ESC>hbi'<ESC>lel")
