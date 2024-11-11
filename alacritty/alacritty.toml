@@ -12,13 +12,15 @@
 # 
 # %APPDATA%\alacritty\alacritty.toml
 
-import = [
-  "C:\\Users\\samsu\\AppData\\Roaming\\alacritty\\base.toml",
+general.import = [
+  # "C:\\Users\\samsu\\AppData\\Roaming\\alacritty\\base.toml",
+  "C:\\Users\\insur\\.config\\alacritty\\base.toml",
 
   # Themes
   # "~\\AppData\\Roaming\\alacritty\\colors_Dracula.toml",
   # "~\\AppData\\Roaming\\alacritty\\dracula.toml",
-  "~\\AppData\\Roaming\\alacritty\\nightfox.toml",
+  # "~\\.config\\alacritty\\nightfox.toml",
+  "~\\.config\\alacritty\\tokyonight_moon.toml",
   # "~\\AppData\\Roaming\\alacritty\\catppuccin-mocha.toml",
   # "~\\AppData\\Roaming\\alacritty\\catppuccin-frappe.toml",
   # "~\\AppData\\Roaming\\alacritty\\catppuccin-macchiato.toml",
