@@ -13,3 +13,13 @@ vim.api.nvim_create_autocmd({"FileType"}, {
     vim.opt_local.expandtab = false -- Преобразуем табуляции в пробелы
   end,
 })
+
+-- Автосохранение файлов
+vim.api.nvim_create_autocmd({"InsertLeave", "TextChanged"}, {
+    pattern = "*",
+    callback = function()
+        if vim.bo.modified then
+            vim.cmd("silent write")
+        end
+    end,
+})
