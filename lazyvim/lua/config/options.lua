@@ -5,4 +5,5 @@
 
 -- LazyVim auto format
 vim.g.autoformat = false
+vim.opt.colorcolumn = "80"
 
