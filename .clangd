@@ -1,0 +1,6 @@
+CompileFlags:
+  Add: [-xc]  # Принудительно обрабатываем файлы как C
+Clangd:
+  HeaderInsertion: iwyu  # Включаем "Include What You Use"
+  HeaderInsertionDecorators: false
+
