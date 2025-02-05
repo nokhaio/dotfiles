@@ -1,0 +1,33 @@
+---
+# Включаем только нужные категории, отключаем ненужные проверки
+Checks: "*,
+        -abseil-*,
+        -altera-*,
+        -android-*,
+        -fuchsia-*,
+        -google-*,
+        -llvm*,
+        -modernize-use-trailing-return-type,
+        -zircon-*,
+        -readability-else-after-return,
+        -readability-static-accessed-through-instance,
+        -readability-avoid-const-params-in-decls,
+        -cppcoreguidelines-non-private-member-variables-in-classes,
+        -misc-non-private-member-variables-in-classes,
+        -readability-identifier-length,
+        -clang-analyzer-core.UninitializedVariable,
+        -cppcoreguidelines-init-variables,
+        # -readability-function-size,
+"
+WarningsAsErrors: ''
+CheckOptions:
+  - key: readability-function-size.LineThreshold
+    value: 26 # Указывает максимальное количество строк в функции
+HeaderFilterRegex: ''
+FormatStyle:     none
+
+
+
+
+
+
