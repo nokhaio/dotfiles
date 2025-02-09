@@ -23,3 +23,14 @@ vim.api.nvim_create_autocmd({"InsertLeave", "TextChanged"}, {
         end
     end,
 })
+
+-- Настройка форматирования с помощью
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = { "*.c", "*.h", "*.cpp", "*.hpp" },
+  callback = function()
+    local cursor_pos = vim.api.nvim_win_get_cursor(0)
+    vim.cmd("%!c_formatter_42")
+    vim.api.nvim_win_set_cursor(0, cursor_pos)
+
+  end,
+})
