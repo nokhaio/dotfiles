@@ -1,98 +1,94 @@
 {
-
-// Extensions  
-
-// Name: C/C++
-// Id: ms-vscode.cpptools
-// Description: C/C++ IntelliSense, debugging, and code browsing.
-// Version: 1.23.6
-// Publisher: Microsoft
-// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
-
-// 
-// Name: C/C++ Extension Pack
-// Id: ms-vscode.cpptools-extension-pack
-// Description: Popular extensions for C++ development in Visual Studio Code.
-// Version: 1.3.0
-// Publisher: Microsoft
-// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack
-
-// Name: WSL
-// Id: ms-vscode-remote.remote-wsl
-// Description: Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code's full feature set.
-// Version: 0.88.5
-// Publisher: Microsoft
-// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
-
-// Themes
-// Name: pustota
-// Id: sobolevn.pustota
-// Description: Minimalistic VSCode theme inspired by old-fashioned hobbies
-// Version: 0.0.24
-// Publisher: sobolevn
-// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=sobolevn.pustota
-
-
-
-// Editor:
-    "editor.accessibilitySupport": "off",
-    "editor.dragAndDrop": false,
-    "editor.rulers": [
-        80
-    ],
-    "editor.fontFamily": "Fira Code",
-    // "editor.fontFamily": "Hack Nerd Font",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 17,
-    //"editor.fontWeight": "normal",
-    "explorer.openEditors.visible": 1,
-    "editor.useTabStops": true,
-    "editor.minimap.enabled": false,
-    // "explorer.compactFolders": false,
-    "editor.occurrencesHighlight": "off",
-    "editor.overviewRulerBorder": false,
-
-// Files:
-    "files.autoSave": "onFocusChange",
-//    "files.autoSave": "afterDelay",
-
-// Terminal:
+  // Extensions  
+  // Name: C/C++
+  // Id: ms-vscode.cpptools
+  // Description: C/C++ IntelliSense, debugging, and code browsing.
+  // Version: 1.23.6
+  // Publisher: Microsoft
+  // VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
+  // 
+  // Name: C/C++ Extension Pack
+  // Id: ms-vscode.cpptools-extension-pack
+  // Description: Popular extensions for C++ development in Visual Studio Code.
+  // Version: 1.3.0
+  // Publisher: Microsoft
+  // VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack
+  // Name: WSL
+  // Id: ms-vscode-remote.remote-wsl
+  // Description: Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code's full feature set.
+  // Version: 0.88.5
+  // Publisher: Microsoft
+  // VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+  // Themes
+  // Name: pustota
+  // Id: sobolevn.pustota
+  // Description: Minimalistic VSCode theme inspired by old-fashioned hobbies
+  // Version: 0.0.24
+  // Publisher: sobolevn
+  // VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=sobolevn.pustota
+  // Editor:
+  "editor.accessibilitySupport": "off",
+  "editor.dragAndDrop": false,
+  "editor.rulers": [
+    80
+  ],
+  "editor.fontFamily": "Fira Code",
+  // "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 17,
+  //"editor.fontWeight": "normal",
+  "explorer.openEditors.visible": 1,
+  "editor.useTabStops": true,
+  "editor.minimap.enabled": false,
+  // "explorer.compactFolders": false,
+  "editor.occurrencesHighlight": "off",
+  "editor.overviewRulerBorder": false,
+  // Files:
+  "files.autoSave": "onFocusChange",
+  //    "files.autoSave": "afterDelay",
+  // Terminal:
   "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
   "terminal.integrated.stickyScroll.enabled": false,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
-// "terminal.integrated.defaultProfile.osx": "zsh",
-//  "terminal.integrated.defaultProfile.linux": "bash",
+  // "terminal.integrated.defaultProfile.osx": "zsh",
+  //  "terminal.integrated.defaultProfile.linux": "bash",
+  //  "terminal.integrated.defaultProfile.linux": "zsh",
   // "terminal.integrated.env.osx": {
   //   "SOBOLE_THEME_MODE": "dark",
-  // },
+  "terminal.integrated.env.linux": {
+    "SOBOLE_THEME_MODE": "dark",
+  },
   "terminal.integrated.enableVisualBell": true,
-
-"editor.scrollbar.horizontal": "hidden",
-"workbench.activityBar.location": "hidden",
-"workbench.colorTheme": "pustota",
-"window.newWindowDimensions": "maximized",
-"workbench.editor.labelFormat": "medium",
-"extensions.experimental.affinity": {
-  "asvetliakov.vscode-neovim": 1
-},
-
-// Customize the cmd+p behavior:
-".quick-input-widget": "top: 25vh !important",
+  "editor.scrollbar.horizontal": "hidden",
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "pustota",
+  "window.newWindowDimensions": "maximized",
+  "workbench.editor.labelFormat": "medium",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  // Customize the cmd+p behavior:
+  ".quick-input-widget": "top: 25vh !important",
   // Extentions settings
   // VSCodeVim
   "vim.useCtrlKeys": false,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
-],
-// Neovim  
+  ],
+  // Neovim  
   "vscode-neovim.compositeKeys": {
-      "jj": {
-          "command": "vscode-neovim.escape",
-      },
+    "jj": {
+      "command": "vscode-neovim.escape",
+    },
   },
   "vscode-neovim.useWSL": true,
   "vscode-neovim.neovimExecutablePaths.linux": "/opt/nvim-linux64/bin/nvim",
@@ -111,7 +107,7 @@
   ],
   "vscode-neovim.ctrlKeysForNormalMode": [
     "a",
-   // "b",
+    // "b",
     "c",
     "d",
     "e",
