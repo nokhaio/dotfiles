@@ -41,8 +41,10 @@
         80
     ],
     "editor.fontFamily": "Fira Code",
+    // "editor.fontFamily": "Hack Nerd Font",
     "editor.fontLigatures": true,
     "editor.fontSize": 17,
+    //"editor.fontWeight": "normal",
     "explorer.openEditors.visible": 1,
     "editor.useTabStops": true,
     "editor.minimap.enabled": false,
@@ -64,9 +66,6 @@
   // "terminal.integrated.env.osx": {
   //   "SOBOLE_THEME_MODE": "dark",
   // },
-  // "accessibility.signals.terminalBell": {
-  //   "sound": "on"
-  // },
   "terminal.integrated.enableVisualBell": true,
 
 "editor.scrollbar.horizontal": "hidden",
@@ -77,6 +76,9 @@
 "extensions.experimental.affinity": {
   "asvetliakov.vscode-neovim": 1
 },
+
+// Customize the cmd+p behavior:
+".quick-input-widget": "top: 25vh !important",
   // Extentions settings
   // VSCodeVim
   "vim.useCtrlKeys": false,
@@ -92,4 +94,50 @@
           "command": "vscode-neovim.escape",
       },
   },
+  "vscode-neovim.useWSL": true,
+  "vscode-neovim.neovimExecutablePaths.linux": "/opt/nvim-linux64/bin/nvim",
+  "vscode-neovim.ctrlKeysForInsertMode": [
+    "a",
+    "c",
+    "d",
+    "h",
+    "j",
+    "m",
+    "o",
+    "r",
+    "t",
+    "u",
+    "w"
+  ],
+  "vscode-neovim.ctrlKeysForNormalMode": [
+    "a",
+   // "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "h",
+    "i",
+    //"j",
+    "k",
+    "l",
+    "m",
+    "o",
+    "r",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "/",
+    "]",
+    "right",
+    "left",
+    "up",
+    "down",
+    "backspace",
+    "delete"
+  ],
 }
