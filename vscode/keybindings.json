@@ -15,4 +15,10 @@
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly && vim.mode != 'Insert'"
     },
+    {
+        "key": "o",
+        "when": "ditorTextFocus && neovim.init && fucusedView == 'workbench.panel.output' && neovim.mode != 'insert'"
+        
+    },
+
 ]

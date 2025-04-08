@@ -118,3 +118,5 @@ alias vv="nvim"
 
 # PATH=$(/usr/bin/printenv PATH | /usr/bin/perl -ne 'print join(":", grep { !/\/mnt\/[a-z]/ } split(/:/));')
 export PATH=/home/noah/.local/bin:/home/noah/bin:/usr/local/bin:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:
+
+export SOBOLE_THEME_MODE="dark"
