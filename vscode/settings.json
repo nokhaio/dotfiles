@@ -90,8 +90,7 @@
       "command": "vscode-neovim.escape",
     },
   },
-  "vscode-neovim.useWSL": true,
-  "vscode-neovim.neovimExecutablePaths.linux": "/opt/nvim-linux64/bin/nvim",
+  "vscode-neovim.neovimExecutablePaths.linux": "/home/nmagomad/.bin/nvim-linux64/bin/nvim",
   "vscode-neovim.ctrlKeysForInsertMode": [
     "a",
     "c",
@@ -136,4 +135,15 @@
     "backspace",
     "delete"
   ],
+  //
+  // 42 C-Format
+  // Name: 42 C-Format
+  // Id: keyhr.42-c-format
+  // VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=keyhr.42-c-format
+  "[c]": {
+    "editor.defaultFormatter": "keyhr.42-c-format"
+  },
+  // 42Header settings
+  "42header.email": "nmagomad@student.42mulhouse.fr",
+  "42header.username": "nmagomad",
 }
