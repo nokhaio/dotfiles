@@ -5,13 +5,13 @@
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
-        "key": "alt+k",
+        "key": "alt+j",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly && vim.mode != 'Insert'"
         //"when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "alt+j",
+        "key": "alt+k",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly && vim.mode != 'Insert'"
     },
