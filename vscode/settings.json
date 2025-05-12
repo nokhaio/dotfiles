@@ -55,7 +55,7 @@
 	// "explorer.compactFolders": false,
 	"editor.occurrencesHighlight": "off",
 	"editor.overviewRulerBorder": false,
-	"editor.autoIndent": "none",
+	"editor.autoIndent": "brackets",
 	// Files:
 	"files.autoSave": "onFocusChange",
 	//    "files.autoSave": "afterDelay",
