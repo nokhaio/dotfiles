@@ -18,7 +18,17 @@
     {
         "key": "o",
         "when": "ditorTextFocus && neovim.init && fucusedView == 'workbench.panel.output' && neovim.mode != 'insert'"
-        
     },
-
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.openSettingsJson"
+    },
+    {
+        "key": "cmd+,",
+        "command": "-workbench.action.openSettings"
+    },
 ]
