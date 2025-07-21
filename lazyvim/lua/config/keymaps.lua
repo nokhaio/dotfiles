@@ -1,6 +1,7 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
+--
 
 local keymap = vim.keymap.set
 local options = { silent = true }
@@ -47,3 +48,6 @@ keymap("n", "sl", "<C-w>l")
 -- Quotation mark around a word
 keymap("n", '""', 'viw<ESC>a"<ESC>hbi"<ESC>lel')
 keymap("n", "''", "viw<ESC>a'<ESC>hbi'<ESC>lel")
+
+-- new line in insert mode
+keymap("i", "<C-j>", "<Esc>o", options)
