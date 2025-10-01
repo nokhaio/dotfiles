@@ -24,7 +24,7 @@
         "command": "workbench.action.closeActiveEditor"
     },
     {
-        "key": "cmd+,",
+        "key": "ctrl+,",
         "command": "workbench.action.openSettingsJson"
     },
     {

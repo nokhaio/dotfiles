@@ -1,73 +1,65 @@
 {
-//					Activity Bar
-
+	//					Activity Bar
 	"workbench.sideBar.location": "right",
-//					Tabs
-
-	"workbench.editor.showTabs": "single",				// Hide all tabs and rest one only tab
-	"workbench.editor.showIcons": false,				// hiden Tab icons
+	//					Tabs
+	"workbench.editor.showTabs": "single", // Hide all tabs and rest one only tab
+	"workbench.editor.showIcons": false, // hiden Tab icons
 	"workbench.editor.labelFormat": "medium",
 	"breadcrumbs.enabled": false,
-	"workbench.editor.highlightModifiedTabs": false,	// выделение вкладок открытых файлов, которые были изменены, но ещё не сохранены
-
-	"workbench.editor.tabActionCloseVisibility": false,	// отображение кнопки закрытия (X) на вкладках редактора.
-	
-//					Main
-	"window.clickThroughInactive": false,				// поведение окон VS Code при клике на неактивное окно.
+	"workbench.editor.highlightModifiedTabs": false, // выделение вкладок открытых файлов, которые были изменены, но ещё не сохранены
+	"workbench.editor.tabActionCloseVisibility": false, // отображение кнопки закрытия (X) на вкладках редактора.
+	"editor.useTabStops": true, //
+	"editor.insertSpaces": false, // Использовать пробелов вместо табы -> true , табы вместо пробелов -> false
+	"editor.detectIndentation": false, // Отключить автоопределение отступов
+	"editor.autoIndent": "brackets", // автоматически выравнивает отступы при вводе скобок, кавычек и других парных символов
+	//					Main
+	"window.clickThroughInactive": false, // поведение окон VS Code при клике на неактивное окно.
 	"workbench.statusBar.visible": false,
-	"workbench.tips.enabled": false,					// показ советов и подсказок при работе в VS Code.
-	"workbench.editor.decorations.colors": false,		// отображение цветных маркеров (цветовых индикаторов) на вкладках открытых файлов
+	"workbench.tips.enabled": false, // показ советов и подсказок при работе в VS Code.
+	"workbench.editor.decorations.colors": false, // отображение цветных маркеров (цветовых индикаторов) на вкладках открытых файлов
 	// "workbench.tree.renderIndentGuides": "none",		// отображение направляющих отступов (indent guides) в деревьях панели
-
-
-//					Theme
+	//					Theme
 	"workbench.colorTheme": "pustota",
 	// "workbench.iconTheme": "ayu",
-
-//					Editor:
-
+	//					Editor:
 	"editor.cursorBlinking": "solid",
 	"editor.accessibilitySupport": "off",
 	"editor.codeLens": true,
 	"editor.dragAndDrop": false,
 	"editor.colorDecorators": false,
-	"editor.folding": false,							// change to `true` and use ctrl+shift (Mac: `cmd+alt`) + `[` or `]`
-	"editor.showFoldingControls": "mouseover",			// ?
-	"editor.rulers": [80],
+	"editor.folding": false, // change to `true` and use ctrl+shift (Mac: `cmd+alt`) + `[` or `]`
+	"editor.showFoldingControls": "mouseover", // ?
+	"editor.rulers": [
+		80
+	],
 	"editor.fontFamily": "Fira Code, Hack Nerd Font, JetBrains Mono, Consolas, monospace",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 17,
 	//"editor.fontWeight": "normal",					// толщину (жирность) шрифта в редакторе
 	"explorer.openEditors.visible": 1,
 	"editor.minimap.enabled": false,
-	"editor.renderWhitespace": "selection",				// Отображение пробелов и Tab
-	"editor.renderLineHighlight": "none",				// Подсветка строки где находится курсор
-	"editor.hideCursorInOverviewRuler": false,			// отображение курсора в Overview Ruler true -> скрыты, false -> видны
-	"explorer.compactFolders": false,					// свёртывание пустых папок в панели Explorer. true -> объединяет последовательные вложенные папки, которые содержат только одну подпапку, false ->все папки показываются полностью, каждая на своей строке, без объединения.
-	"editor.occurrencesHighlight": "off",				// подсветку всех вхождений слова или переменной, на которой находится курсор
-	"editor.overviewRulerBorder": false,				// твечает за границу Overview Ruler — вертикальной мини-карты кода справа в редакторе. Overview Ruler — это полоска справа, где видны ошибки, предупреждения, закладки и позиция курсора.
-	"editor.bracketPairColorization.enabled": true,		// цветное выделение пар скобок
-	"editor.scrollBeyondLastLine": false,				// поведение прокрутки редактора после последней строки кода.
-	"editor.snippetSuggestions": "none",				// показ подсказок сниппетов (шаблонов кода) в автодополнении
+	"editor.renderWhitespace": "selection", // Отображение пробелов и Tab
+	"editor.renderLineHighlight": "none", // Подсветка строки где находится курсор
+	"editor.hideCursorInOverviewRuler": false, // отображение курсора в Overview Ruler true -> скрыты, false -> видны
+	"explorer.compactFolders": false, // свёртывание пустых папок в панели Explorer. true -> объединяет последовательные вложенные папки, которые содержат только одну подпапку, false ->все папки показываются полностью, каждая на своей строке, без объединения.
+	"editor.occurrencesHighlight": "off", // подсветку всех вхождений слова или переменной, на которой находится курсор
+	"editor.overviewRulerBorder": false, // твечает за границу Overview Ruler — вертикальной мини-карты кода справа в редакторе. Overview Ruler — это полоска справа, где видны ошибки, предупреждения, закладки и позиция курсора.
+	"editor.bracketPairColorization.enabled": true, // цветное выделение пар скобок
+	"editor.scrollBeyondLastLine": false, // поведение прокрутки редактора после последней строки кода.
+	"editor.snippetSuggestions": "none", // показ подсказок сниппетов (шаблонов кода) в автодополнении
 	"editor.wordWrap": "on",
 	"editor.wordWrapColumn": 80,
-	"editor.hover.enabled": false,						// появление всплывающих подсказок (hover)
-	"editor.stickyScroll.enabled": false,				// липкую прокрутку заголовков блоков кода, Sticky Scroll — это небольшая панель сверху редактора, которая показывает контекст текущего блока кода, даже если ты прокрутил файл вниз.
-	"explorer.confirmDragAndDrop": false,				// подтверждение удаления файлов и папок в панели Explorer
-	"explorer.decorations.badges": false,				// отображение значков (badges) на иконках файлов и папок в панели Explorer.Badges — это маленькие индикаторы на иконках файлов/папок, которые показывают:  M — modified, U — untracked
-	"extensions.ignoreRecommendations": true,			// игнорирование рекомендуемых расширений
+	"editor.hover.enabled": false, // появление всплывающих подсказок (hover)
+	"editor.stickyScroll.enabled": false, // липкую прокрутку заголовков блоков кода, Sticky Scroll — это небольшая панель сверху редактора, которая показывает контекст текущего блока кода, даже если ты прокрутил файл вниз.
+	"explorer.confirmDragAndDrop": false, // подтверждение удаления файлов и папок в панели Explorer
+	"explorer.decorations.badges": false, // отображение значков (badges) на иконках файлов и папок в панели Explorer.Badges — это маленькие индикаторы на иконках файлов/папок, которые показывают:  M — modified, U — untracked
+	"extensions.ignoreRecommendations": true, // игнорирование рекомендуемых расширений
 	"editor.scrollbar.vertical": "auto",
 	"editor.scrollbar.horizontal": "hidden",
-	"editor.useTabStops": true,							//
-	"editor.insertSpaces": false,						// Использовать табы вместо пробелов
-	"editor.detectIndentation": false,					// Отключить автоопределение отступов
-	"editor.autoIndent": "brackets",
 	// "explorer.compactFolders": false,
-
-//					Files:
-	"files.autoSave": "onFocusChange",					// afterDelay
-
-//					Terminal:
+	//					Files:
+	"files.autoSave": "onFocusChange", // afterDelay
+	//					Terminal:
 	"terminal.integrated.shellIntegration.enabled": false,
 	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
 	"terminal.integrated.stickyScroll.enabled": false,
@@ -81,27 +73,47 @@
 		"SOBOLE_THEME_MODE": "dark",
 	},
 	"terminal.integrated.enableVisualBell": true,
-	
-//					Search
-	"search.quickOpen.history.filterSortOrder": "recency",		// порядок сортировки результатов истории поиска в Quick Open
-	"workbench.quickOpen.preserveInput": false,					// охранение текста, введённого в Quick Open
-
-//
+	//					Search
+	"search.quickOpen.history.filterSortOrder": "recency", // порядок сортировки результатов истории поиска в Quick Open
+	"workbench.quickOpen.preserveInput": false, // охранение текста, введённого в Quick Open
+	//
 	"window.newWindowDimensions": "maximized",
 	"chat.agent.enabled": false,
-		// Customize the cmd+p behavior:
+	// Customize the cmd+p behavior:
 	".quick-input-widget": "top: 25vh !important",
-
-//					Per-language UI settings:
+	
+	
+	//					Per-language UI settings:
+	"[jsonc]": { // for vscode theme editing
+		"editor.colorDecorators": true,
+	},
 	"[css]": {
 		"editor.colorDecorators": true,
 	},
-	"[c]": {
+	// Python
+	"[python]": {
+		"editor.insertSpaces": true,
 		"editor.tabSize": 4,
-		"editor.insertSpaces": false
 	},
 
-/*
+	// C/C++ файлы - используем ТАБЫ
+	"[c]": {
+		"editor.insertSpaces": false, // Использовать табы вместо пробелов
+		"editor.defaultFormatter": "ms-vscode.cpptools",
+		// "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, UseTab: Always, IndentWidth: 4, TabWidth: 4 }",
+	},
+	"[cpp]": {
+		"editor.insertSpaces": false,
+		"editor.defaultFormatter": "ms-vscode.cpptools",
+		// "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, UseTab: Always, IndentWidth: 4, TabWidth: 4 }",
+	},
+	"[h]": {
+		"editor.insertSpaces": false,
+	},
+	"[hpp]": {
+		"editor.insertSpaces": false,
+	},
+	/*
 //					кастомная настройка UI
 //			https://github.com/subframe7536/vscode-custom-ui-style extension:
 	  "custom-ui-style.electron": {
@@ -131,14 +143,10 @@
 	    },
 	},
 */
-
-
-
-////////////////////////////////////////////////////////////////////////////////
-// 					Extentions settings
-////////////////////////////////////////////////////////////////////////////////
-//					VSCodeVim
-
+	////////////////////////////////////////////////////////////////////////////////
+	// 					Extentions settings
+	////////////////////////////////////////////////////////////////////////////////
+	//					VSCodeVim
 	/* "vim.useCtrlKeys": false,
 	"vim.insertModeKeyBindings": [
 		{
@@ -151,21 +159,51 @@
 			]
 		}
 	], */
-
-//					Neovim  
-
+	//					Neovim  
 	"vscode-neovim.compositeKeys": {
-		"jj": { "command": "vscode-neovim.escape", },
+		"jj": {
+			"command": "vscode-neovim.escape",
+		},
 	},
 	//"vscode-neovim.useWSL": true,
 	"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-	"vscode-neovim.ctrlKeysForInsertMode": [ "a", "c", "d", "h", "j", "m", "o",
-		"r", "t", "u", "w" ],
-	"vscode-neovim.ctrlKeysForNormalMode": [ "a",
+	"vscode-neovim.ctrlKeysForInsertMode": [
+		"a",
+		"c",
+		"d",
+		"h",
+		"j",
+		"m",
+		"o",
+		"r",
+		"t",
+		"u",
+		"w"
+	],
+	"vscode-neovim.ctrlKeysForNormalMode": [
+		"a",
 		// "b",
-		"c", "d", "e", "f", "h", "i",
+		"c",
+		"d",
+		"e",
+		"f",
+		"h",
+		"i",
 		//"j",
-		"k", "l", "m", "o", "r", "t", "u", "v", "w", "x", "y", "z", "/", "]",
+		"k",
+		"l",
+		"m",
+		"o",
+		"r",
+		"t",
+		"u",
+		"v",
+		"w",
+		"x",
+		"y",
+		"z",
+		"/",
+		"]",
 		"right",
 		"left",
 		"up",
@@ -173,9 +211,19 @@
 		"backspace",
 		"delete"
 	],
+	"workbench.activityBar.location": "hidden",
 	"extensions.experimental.affinity": {
 		"asvetliakov.vscode-neovim": 1
 	},
-	"workbench.activityBar.location": "hidden",
-
+	// "workbench.activityBar.location": "hidden",
+	"C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": true,
+	// "C_Cpp.inlayHints.parameterNames.enabled": "",
+	"C_Cpp.inlayHints.parameterTypes.enabled": true,
+	"C_Cpp.inlayHints.variableTypes.enabled": true,
+	"C_Cpp.inlayHints.functionReturnTypes.enabled": true,
+	// "C_Cpp.clang_format_path": "clang-format",			// path to clang-format programm
+	"C_Cpp.formatting": "clangFormat",
+	"C_Cpp.clang_format_style": "file",
+	"C_Cpp.clang_format_fallbackStyle": "Google",
+	// "custo" // TODO узнать что это такое может быть простая опечатка.
 }
