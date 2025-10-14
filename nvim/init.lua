@@ -1,19 +1,10 @@
------------------------------------------------------------
--- Импорт модулей lua
------------------------------------------------------------
--- require('colorscheme.onedark') 
-require('colorscheme.nightfly') 
-require('settings') 
-require('keymaps') 
-require('plugins')
+if vim.g.vscode then
+  -- VSCode extension
+  -- require("config.lazyvscode")
+  require("config.vscode")
+else
+  -- bootstrap lazy.nvim, LazyVim and your plugins
+  require("config.lazy")
+  require("ft_count").setup()
 
--- local has = vim.fn.has
--- local is_mac = has "macunix"
--- local is_win = has "win32"
-
--- if is_mac then
---   require('macos')
--- end
--- if is_win then
---   require('windows')
--- end
+end
