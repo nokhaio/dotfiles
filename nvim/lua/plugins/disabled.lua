@@ -11,4 +11,5 @@ return {
   -- { "folke/tokyonight.nvim", enabled = false }, -- sidekick.nvim is your Neovim AI sidekick that integrates Copilot LSP's "Next Edit Suggestions" with a built-in terminal for any AI CLI.
   { "windwp/nvim-ts-autotag", enabled = false }, -- sidekick.nvim is your Neovim AI sidekick that integrates Copilot LSP's "Next Edit Suggestions" with a built-in terminal for any AI CLI.
   -- { "nvim-treesitter/nvim-treesitter", enabled = false }, -- sidekick.nvim is your Neovim AI sidekick that integrates Copilot LSP's "Next Edit Suggestions" with a built-in terminal for any AI CLI.
+  { "catppuccin/nvim", enabled = false },
 }
