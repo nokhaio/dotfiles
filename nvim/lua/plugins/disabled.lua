@@ -4,7 +4,7 @@ return {
   -- { "folke/trouble.nvim", enabled = false },
   -- { "folke/todo-comments.nvim", enabled = false },
   -- { "folke/noice.nvim", enabled = false },
-  { "rafamadriz/friendly-snippets", enabled = false },
+  -- { "rafamadriz/friendly-snippets", enabled = false },
   -- { "garymjr/nvim-snippets", enabled = false },
   -- { "MunifTanjim/nui.nvim", enabled = false }, -- neo-tree зависимость
   { "folke/sidekick.nvim", enabled = false }, -- sidekick.nvim is your Neovim AI sidekick that integrates Copilot LSP's "Next Edit Suggestions" with a built-in terminal for any AI CLI.
