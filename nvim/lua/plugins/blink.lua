@@ -3,7 +3,7 @@ return {
 
   dependencies = {
     -- "rafamadriz/friendly-snippets",
-    "nouha15/friendly-snippets",
+    "nokhaio/friendly-snippets",
     -- add blink.compat to dependencies
     {
       "saghen/blink.compat",

@@ -18,7 +18,7 @@ keymap("i", "jj", "<ESC>", options)
 keymap("i", "<C-e>", "")
 
 -- Move selected line / block of text in visual mode
---keymap("x", "K", ":move '<-2<CR>gv-gv", silent)
+keymap("x", "K", ":move '<-2<CR>gv-gv", options)
 keymap("x", "J", ":move '>+1<CR>gv-gv", options)
 
 --keymap('v', '"y', '"*y', options)
@@ -39,15 +39,23 @@ keymap("n", "<s-tab", ":tabprev<Return>")
 keymap("n", "ss", ":split<Return>")
 keymap("n", "sv", ":vsplit<Return>")
 
--- Move window
-keymap("n", "sh", "<C-w>h")
+-- Move win}dow
+-- keymap("n", "sh", "<C-w>h")
+keymap("n", "C-h", "<C-w>h")
 keymap("n", "sk", "<C-w>k")
 keymap("n", "sj", "<C-w>j")
-keymap("n", "sl", "<C-w>l")
+-- keymap("n", "sl", "<C-w>l")
+keymap("n", "C-l", "<C-w>l")
 
 -- Quotation mark around a word
 keymap("n", '""', 'viw<ESC>a"<ESC>hbi"<ESC>lel')
 keymap("n", "''", "viw<ESC>a'<ESC>hbi'<ESC>lel")
+keymap("n", "((", "viw<ESC>a)<ESC>hbi(<ESC>lel")
+keymap("n", "{{", "viw<ESC>a}<ESC>hbi{<ESC>lel")
+keymap("n", "[[", "viw<ESC>a]<ESC>hbi[<ESC>lel")
 
 -- new line in insert mode
 keymap("i", "<C-j>", "<Esc>o", options)
+
+-- switch buffer
+keymap("n", "A-d", "b#", options)

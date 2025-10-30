@@ -12,8 +12,8 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function()
     -- vim.keymap.set("n", "<C-h>", ":w<CR>:!make; ./*.out<CR>", { buffer = true, silent = true })
     -- vim.keymap.set("i", "<C-h>", "<Esc>:w<CR>:!make; ./*.out<CR>", { buffer = true, silent = true })
-    vim.keymap.set("n", "<C-h>", ":w<CR>:!make<CR>", { buffer = true, silent = true })
-    vim.keymap.set("i", "<C-h>", "<Esc>:w<CR>:!make<CR>", { buffer = true, silent = true })
+    vim.keymap.set("n", "<C-S-h>", ":w<CR>:!make<CR>", { buffer = true, silent = true })
+    vim.keymap.set("i", "<C-S-h>", "<Esc>:w<CR>:!make<CR>", { buffer = true, silent = true })
   end,
 })
 
