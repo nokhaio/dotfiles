@@ -1,10 +1,11 @@
-local Path = vim.fn.stdpath("data") .. "~/projects/theme-ayu/boda.nvim"
+-- local Path = vim.fn.stdpath("data") 
+local Path = vim.fn.expand("$HOME") .. "/projects/theme-ayu/boda.nvim/"
 
 if vim.fn.isdirectory(Path) == 1 then
 	-- Boda local for develop
 	return {
 		-- dir = "~/projects/theme-ayu/boda.nvim/", -- локальный путь до твоей темы
-		Path,
+		dir = Path,
 		lazy = false, -- чтобы загрузилась сразу
 		priority = 1000, -- чтобы тема применилась раньше других
 		config = function()
