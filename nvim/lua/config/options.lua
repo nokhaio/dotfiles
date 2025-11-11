@@ -10,3 +10,11 @@ vim.opt.smarttab = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.textwidth = 80
+
+-- Neovide Settings
+if vim.g.neovide then
+	vim.g.neovide_cursor_animate_command_line = false
+	vim.g.neovide_cursor_animate_in_insert_mode = false
+	vim.g.neovide_cursor_animate_out_of_view = false
+	vim.g.neovide_cursor_trail_size = 0
+end
