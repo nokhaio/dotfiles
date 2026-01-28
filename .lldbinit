@@ -1,0 +1,30 @@
+# Показывать 10 строк кода до и после текущей строки
+settings set stop-line-count-before 10
+settings set stop-line-count-after 10
+
+# Включить цвета в выводе (если терминал поддерживает)
+settings set use-color true
+
+target stop-hook add
+frame variable
+target stop-hook disable  # Опционально: можно выключить по умолчанию и включать вручную
+
+# Скрытие системных вызовов: Чтобы не "проваливаться" в недра системных библиотек при шаге step, добавьте
+settings set target.process.thread.step-avoid-regexp ^std::|^boost::
+
+# Быстрый вывод переменных (как в GDB)
+command alias v frame variable
+command alias vo frame variable -O  # Вывод как объекта (полезно для Swift/Obj-C)
+
+# Быстрый переход по коду
+command alias n next
+command alias s step
+command alias c continue
+
+# Вывод адреса в шестнадцатеричном виде
+command alias phex expr -f hex --
+
+
+
+
+command script import ~/.lldb-dashboard/dashboard.py
