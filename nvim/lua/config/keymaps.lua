@@ -57,5 +57,5 @@ keymap("n", "[[", "viw<ESC>a]<ESC>hbi[<ESC>lel")
 -- new line in insert mode
 keymap("i", "<C-j>", "<Esc>o", options)
 
--- switch buffer
-keymap("n", "A-d", "b#", options)
+-- Переключение между последними двумя буферами через Leader + Tab
+-- keymap('n', 'A-d', '<c-6>', { desc = 'Switch to last buffer' })
