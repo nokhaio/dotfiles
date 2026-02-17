@@ -14,6 +14,7 @@ keymap("n", ",vr", ":so %<CR>")
 
 -- Типа 'Нажимает' на ESC при быстром нажатии jj, чтобы не тянутся
 keymap("i", "jj", "<ESC>", options)
+keymap("i", "<CapsLock>", "<ESC>", options)
 --
 keymap("i", "<C-e>", "")
 

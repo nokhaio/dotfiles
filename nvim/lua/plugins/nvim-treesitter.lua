@@ -7,8 +7,8 @@ return {
     folds = { enable = true }, ---@type lazyvim.TSFeat
     ensure_installed = {
       -- "bash",
-      -- "c",
-      -- "cpp",
+      "c",
+      "cpp",
       -- "diff",
       -- "html",
       -- "javascript",
@@ -33,5 +33,11 @@ return {
       -- "xml",
       "yaml",
     },
+
+	vim.filetype.add({
+			extension = {
+				tpp = "cpp"
+			}
+		})
   },
 }
