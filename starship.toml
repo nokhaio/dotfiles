@@ -1,0 +1,231 @@
+# format = '$all'
+
+# COLORS
+# Black: #0A0E14
+# Grey: #B3B1AD
+# Light grey: #B3B1ADBF // 75% alpha
+# Yellow: #E6B450
+# Orange: #FFB454
+# Red: #FF8F40
+# Blue: #59C2FF
+
+
+
+
+format = """
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$fossil_branch\
+$fossil_metrics\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$hg_state\
+$pijul_channel\
+$docker_context\
+$package\
+$cmake\
+$daml\
+$dart\
+$deno\
+$elixir\
+$elm\
+$fennel\
+$golang\
+$guix_shell\
+$haxe\
+$helm\
+$julia\
+$gradle\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$red\
+$rust\
+$scala\
+$solidity\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$nats\
+$direnv\
+$env_var\
+$mise\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$netns\
+$shell\
+$character"""
+
+
+
+
+
+[python]
+pyenv_version_name = false
+pyenv_prefix = "pyenv "
+python_binary = ["python","python3","python2",]
+# format = "[via 🐍 $version]($style) "
+# format = " [ $symbol$penv_prefix ($virtualenv)](#E6B450) "
+# format = 'via [${symbol}${pyenv_prefix}(${version} )(\($symbol$virtualenv\) )](#E6B450)'
+format = '[ ${pyenv_prefix}( $symbol$virtualenv )](#E6B450)'
+version_format = "v${raw}"
+style = "yellow bold"
+# symbol = "🐍 "
+symbol = " "
+disabled = false
+detect_extensions = [
+    "py",
+    "ipynb",
+]
+detect_files = [
+    "requirements.txt",
+    ".python-version",
+    "pyproject.toml",
+    "Pipfile",
+    "tox.ini",
+    "setup.py",
+    "__init__.py",
+]
+detect_folders = []
+detect_env_vars = ["VIRTUAL_ENV"]
+
+
+
+
+
+
+
+
+# Which is equivalent to
+# format = """
+# $username\
+# $hostname\
+# $localip\
+# $shlvl\
+# $singularity\
+# $kubernetes\
+# $directory\
+# $vcsh\
+# $fossil_branch\
+# $fossil_metrics\
+# $git_branch\
+# $git_commit\
+# $git_state\
+# $git_metrics\
+# $git_status\
+# $hg_branch\
+# $hg_state\
+# $pijul_channel\
+# $docker_context\
+# $package\
+# $c\
+# $cmake\
+# $cobol\
+# $daml\
+# $dart\
+# $deno\
+# $dotnet\
+# $elixir\
+# $elm\
+# $erlang\
+# $fennel\
+# $fortran\
+# $gleam\
+# $golang\
+# $guix_shell\
+# $haskell\
+# $haxe\
+# $helm\
+# $java\
+# $julia\
+# $kotlin\
+# $gradle\
+# $lua\
+# $nim\
+# $nodejs\
+# $ocaml\
+# $opa\
+# $perl\
+# $php\
+# $pulumi\
+# $purescript\
+# $python\
+# $quarto\
+# $raku\
+# $rlang\
+# $red\
+# $ruby\
+# $rust\
+# $scala\
+# $solidity\
+# $swift\
+# $terraform\
+# $typst\
+# $vlang\
+# $vagrant\
+# $zig\
+# $buf\
+# $nix_shell\
+# $conda\
+# $meson\
+# $spack\
+# $memory_usage\
+# $aws\
+# $gcloud\
+# $openstack\
+# $azure\
+# $nats\
+# $direnv\
+# $env_var\
+# $mise\
+# $crystal\
+# $custom\
+# $sudo\
+# $cmd_duration\
+# $line_break\
+# $jobs\
+# $battery\
+# $time\
+# $status\
+# $os\
+# $container\
+# $netns\
+# $shell\
+# $character"""
