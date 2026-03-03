@@ -1,0 +1,149 @@
+/*
+COLORS
+Black: #0A0E14
+Grey: #B3B1AD
+Light grey: #B3B1ADBF // 75% alpha
+Yellow: #E6B450
+Orange: #FFB454
+Red: #FF8F40
+Blue: #59C2FF
+*/
+
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Fira Code", "JetBrains Mono", "Font Awesome 6 Free", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    /* background: rgba(43, 48, 59, 0.85); */
+    background: rgba(10, 14, 20, 0.95);
+    /* color: #ffffff; */
+    color: #0A0E14;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-bottom: 2px solid #333333;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces,
+#mode,
+#window,
+#cpu,
+#memory,
+#battery,
+#pulseaudio,
+#network,
+#clock,
+#disk,
+#temperature,
+#tray,
+#window,
+#workspaces button,
+#mode {
+    background: transparent;
+	color: #B3B1AD;
+    padding: 0 10px;
+    margin: 0 2px;
+}
+
+
+/* Модули */
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.focused {
+    background: #64727D;
+	color: #0A0E14;
+    border-bottom: 2px solid #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    /* background: #64727D; */
+    border-bottom: 2px solid #ffffff;
+	color: #FFB454;
+    padding: 0 5px;
+}
+
+#mode.system-mode {
+	color: #FFB454;
+}
+
+#clock {
+    /* background-color: #64727D; #0A0E14 */
+    /* background-color: rgba(10, 14, 20, 0.75); */
+	color: #B3B1AD;
+	/* color: rgba(10, 14, 20, 0.85); */
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#battery {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#battery.charging {
+    /* color: #26A65B; */
+}
+
+#battery.warning:not(.charging) {
+    color: #ffbe76;
+}
+
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+}
+
+#cpu {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#memory {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#pulseaudio {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#pulseaudio.muted {
+    color: #f53c3c;
+}
+
+#tray {
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+#window {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+/* Tooltips */
+tooltip {
+    background: rgba(43, 48, 59, 0.95);
+    border: 1px solid #333333;
+}
+
+tooltip label {
+    color: #ffffff;
+}

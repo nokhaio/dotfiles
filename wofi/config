@@ -1,0 +1,33 @@
+# Режим запуска: drun (поиск .desktop файлов), run (поиск в PATH), или dmenu
+show=drun
+
+# Размеры окна
+width=40%
+height=60%
+
+# Расположение на экране (center, top, bottom, left, right, top_left, etc.)
+location=center
+
+# Строка приглашения
+prompt=Запуск:
+
+# Режим поиска (contains, fuzzy)
+matching=fuzzy
+
+# Чувствительность к регистру (true/false)
+insensitive=true
+
+# Скрыть полосу прокрутки
+hide_scroll=true
+
+# Разрешить отображение иконок приложений
+allow_images=true
+
+# Номер колонок
+columns=1
+
+# Сортировка (default или alphabetical)
+sort_order=alphabetical
+
+# Строка поиска при открытии (оставьте пустой, чтобы не было)
+# search=

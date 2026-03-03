@@ -1,0 +1,98 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["tray", "network", "cpu", "memory", "battery", "pulseaudio", "clock"],
+    
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "urgent": "!"
+        }
+    },
+    
+    "sway/window": {
+        "max-length": 50,
+        "rewrite": {
+            "(.*) - Mozilla Firefox": "Firefox",
+            "(.*) - Visual Studio Code": "VS Code"
+        }
+    },
+    
+	"sway/mode": {
+        "format": "▶ {}",
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    
+    
+    "cpu": {
+        "format": "CPU {usage}%",
+        "interval": 5
+    },
+    
+    "memory": {
+        "format": "RAM {}%",
+        "interval": 5
+    },
+    
+    "battery": {
+        "bat": "BAT0",
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "interval": 30
+    },
+    
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "MUTE",
+        "format-icons": ["", "", ""],
+        "scroll-step": 5,
+        "on-click": "pavucontrol"
+    },
+    
+	"network": {
+		"format-wifi": " {essid}",
+    	"format-ethernet": " {ifname}",
+    	"format-disconnected": "Disconnected",
+    	"interval": 5
+	},
+    
+    "tray": {
+        "icon-size": 20,
+        "spacing": 5
+    },
+    
+	"network": {
+		"format-wifi": " {essid}",
+    	"format-ethernet": " {ifname}",
+    	"format-disconnected": "Disconnected",
+    	"interval": 5
+	},
+    
+}

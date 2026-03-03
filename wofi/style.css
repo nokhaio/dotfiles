@@ -1,0 +1,65 @@
+/* ~/.config/wofi/style.css */
+* {
+    font-family: "JetBrains Mono", "Font Awesome 6 Free", monospace;
+    font-size: 14px;
+}
+
+/* Главное окно */
+window {
+    background-color: rgba(10, 14, 20, 0.95);
+    border-radius: 12px;
+    border: 2px solid #333333;
+}
+
+/* Внешний контейнер */
+#outer-box {
+    margin: 5px;
+}
+
+/* Строка ввода */
+#input {
+    background-color: rgba(30, 34, 40, 0.9);
+    color: #e5e9f0;
+    border: 1px solid #4c566a;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin: 8px;
+}
+
+#input:focus {
+    border-color: #88c0d0;
+}
+
+/* Область прокрутки со списком */
+#scroll {
+    margin: 5px;
+}
+
+/* Внутренний контейнер списка */
+#inner-box {
+    background-color: transparent;
+}
+
+/* Элемент списка */
+#entry {
+    padding: 8px;
+    border-radius: 6px;
+    color: #d8dee9;
+}
+
+/* Выбранный элемент */
+#entry:selected {
+    background-color: #5e81ac;
+    color: #ffffff;
+    outline: none;
+}
+
+/* Иконка в элементе */
+#img {
+    padding-right: 8px;
+}
+
+/* Текст элемента */
+#text {
+    margin: 2px;
+}
