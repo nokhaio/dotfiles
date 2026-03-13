@@ -1,40 +1,48 @@
--- local Path = vim.fn.stdpath("data") 
+-- local Path = vim.fn.stdpath("data")
 local Path = vim.fn.expand("$HOME") .. "/projects/theme-ayu/boda.nvim/"
 
 if vim.fn.isdirectory(Path) == 1 then
-	-- Boda local for develop
-	return {
-		-- dir = "~/projects/theme-ayu/boda.nvim/", -- локальный путь до твоей темы
-		dir = Path,
-		lazy = false, -- чтобы загрузилась сразу
-		priority = 1000, -- чтобы тема применилась раньше других
-		config = function()
-			-- Настройка темы
-			require("boda").setup({
-				mirage = false, -- true для темной версии mirage
-				terminal = true,
-				overrides = {}, -- кастомные настройки
-			})
-			-- Установка цветовой схемы
-			require("boda").colorscheme()
-		end,
-	}
+  -- Boda local for develop
+  return {
+    {
+      -- dir = "~/projects/theme-ayu/boda.nvim/", -- локальный путь до твоей темы
+      dir = Path,
+      lazy = false, -- чтобы загрузилась сразу
+      priority = 1000, -- чтобы тема применилась раньше других
+      config = function()
+        -- Настройка темы
+        require("boda").setup({
+          mirage = false, -- true для темной версии mirage
+          terminal = true,
+          overrides = {}, -- кастомные настройки
+        })
+        -- Установка цветовой схемы
+        require("boda").colorscheme()
+      end,
+    },
+    -- {
+    --   "LazyVim/LazyVim",
+    --   opts = {
+    --     colorscheme = "boda",
+    --   },
+    -- },
+  }
 else
-	return {
-		"nokhaio/boda.nvim",
+  return {
+    "nokhaio/boda.nvim",
 
-		name = "boda",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			require("boda").setup({
-				mirage = false,
-				terminal = true,
-				overrides = {},
-			})
-			require("boda").colorscheme()
-		end,
-	}
+    name = "boda",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("boda").setup({
+        mirage = false,
+        terminal = true,
+        overrides = {},
+      })
+      require("boda").colorscheme()
+    end,
+  }
 end
 
 -- ============================================================================

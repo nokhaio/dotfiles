@@ -39,7 +39,7 @@
     },
     
 	"sway/mode": {
-        "format": "▶ {}",
+        "format": "▶ {}: ⏻  poweroff: p, reboot: r, suspend: s, hibernate: h, lock: l, exit: e",
         "tooltip": false
     },
 

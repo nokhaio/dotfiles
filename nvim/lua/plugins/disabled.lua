@@ -14,6 +14,10 @@ return {
   { "catppuccin/nvim", enabled = false },
   { "akinsho/bufferline.nvim", enabled = false },
   { "folke/noice.nvim", enabled = false },
+  -- { "folke/tokyonight.nvim", enabled = false },
+  { "nvim-mini/mini.ai", enabled = false },
+  { "folke/persistence.nvim", enabled = false },
+        
 
   -- { "", enabled = false },
 }
