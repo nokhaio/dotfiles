@@ -31,6 +31,7 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term foot
+# set $term wezterm
 # Your preferred application launcher
 # set $menu wmenu-run
 set $menu wofi
@@ -39,10 +40,18 @@ set $monitor_left "eDp-1"
 set $monitor_right "HDMI-A-2"
 
 
+# default_border none — убирает рамку и заголовок полностью
+# default_border pixel 2 — убирает заголовок, оставляя рамку в 2 пикселя
+default_border pixel 2
+default_floating_border pixel 2
+
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /run/media/mnoah/Data/Pictures/wallpaper.jpeg fill
+#
 #
 # Example configuration:
 #

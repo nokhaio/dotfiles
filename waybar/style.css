@@ -41,6 +41,7 @@ window#waybar.hidden {
 #pulseaudio,
 #network,
 #clock,
+#language,
 #disk,
 #temperature,
 #tray,
@@ -90,6 +91,14 @@ window#waybar.hidden {
 	/* color: rgba(10, 14, 20, 0.85); */
     padding: 0 10px;
     margin: 0 5px;
+}
+
+#language {
+	padding: 0 8px;
+	margin: 0 4px;
+    /* background-color: #eb4d4b; */
+	color: #B3B1AD;
+	border-radius: 4px;
 }
 
 #battery {

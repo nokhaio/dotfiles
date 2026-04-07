@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "height": 30,
-    "spacing": 4,
+    "spacing": 2,
     "margin-top": 0,
     "margin-bottom": 0,
     "margin-left": 0,
@@ -10,7 +10,7 @@
     
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
     "modules-center": ["sway/window"],
-    "modules-right": ["tray", "network", "cpu", "memory", "battery", "pulseaudio", "clock"],
+    "modules-right": ["tray", "network", "cpu", "memory", "battery", "pulseaudio", "sway/language", "clock"],
     
     "sway/workspaces": {
         "disable-scroll": true,
@@ -47,6 +47,12 @@
         "format": "{:%H:%M}",
         "format-alt": "{:%Y-%m-%d}"
     },
+
+	"sway/language": {
+		"format": "{}",
+		"format-en": "EN",
+		"format-ru": "RU"
+	},
     
     
     "cpu": {

@@ -17,9 +17,7 @@ $hostname\
 $localip\
 $shlvl\
 $singularity\
-$kubernetes\
 $directory\
-$vcsh\
 $fossil_branch\
 $fossil_metrics\
 $git_branch\
@@ -32,14 +30,9 @@ $hg_state\
 $pijul_channel\
 $docker_context\
 $package\
-$cmake\
 $daml\
-$dart\
-$deno\
-$elixir\
 $elm\
 $fennel\
-$golang\
 $guix_shell\
 $haxe\
 $helm\
@@ -53,27 +46,20 @@ $php\
 $pulumi\
 $purescript\
 $python\
+$virtualenv\
 $quarto\
 $raku\
 $red\
-$rust\
-$scala\
 $solidity\
 $terraform\
 $typst\
-$vlang\
 $vagrant\
-$zig\
 $buf\
 $nix_shell\
-$conda\
 $meson\
 $spack\
 $memory_usage\
-$aws\
-$gcloud\
 $openstack\
-$azure\
 $nats\
 $direnv\
 $env_var\
@@ -95,40 +81,37 @@ $character"""
 
 
 
-
-
 [python]
-pyenv_version_name = false
-pyenv_prefix = "pyenv "
-python_binary = ["python","python3","python2",]
-# format = "[via 🐍 $version]($style) "
-# format = " [ $symbol$penv_prefix ($virtualenv)](#E6B450) "
-# format = 'via [${symbol}${pyenv_prefix}(${version} )(\($symbol$virtualenv\) )](#E6B450)'
-format = '[ ${pyenv_prefix}( $symbol$virtualenv )](#E6B450)'
-version_format = "v${raw}"
-style = "yellow bold"
-# symbol = "🐍 "
-symbol = " "
-disabled = false
-detect_extensions = [
-    "py",
-    "ipynb",
-]
-detect_files = [
-    "requirements.txt",
-    ".python-version",
-    "pyproject.toml",
-    "Pipfile",
-    "tox.ini",
-    "setup.py",
-    "__init__.py",
-]
-detect_folders = []
-detect_env_vars = ["VIRTUAL_ENV"]
+format = '[(${symbol}\($virtualenv\) )]($style)'
+symbol = " " # 🐍
+style = "bold #E6B450"
 
 
-
-
+# [git_branch]
+# symbol = ""
+# format = '[$symbol$branch]($style) '
+# style = "bold green"
+#
+# [git_status]
+# format = '[$all_status$ahead_behind]($style)'
+# style = "bold"
+# conflicted = " §"
+# ahead = " ⬆"
+# behind = " ⬇"
+# diverged = " ⬍"
+# untracked = ""
+# stashed = ""
+# modified = ""
+# staged = " ✚"
+# renamed = ""
+# deleted = ""
+#
+# # Альтернативный вариант с символами как в оригинале
+# [git_status.alternative]
+# untracked = " ?"
+# staged = " ✚"
+# modified = " ✗"
+# deleted = " ✘"
 
 
 
