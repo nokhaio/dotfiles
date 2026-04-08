@@ -1,5 +1,5 @@
-# shell = { program = "powershell" }
-terminal.shell = { program = "ubuntu" }
+# shell = { program = "powershell" } # this for WSL
+# terminal.shell = { program = "ubuntu" } # this for WSL
 
 # working_directory = "C:\\"
 general.live_config_reload = true
@@ -18,10 +18,10 @@ general.live_config_reload = true
   # italic = { family = "Hack NF", style = "Italic" }
   # bold_italic = { family = "Hack NF", style = "Bold Italic" }
 
-  normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
-  bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
-  italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
-  bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+  normal = { family = "Fira Code", style = "Regular" }
+  bold = { family = "Fira Code", style = "Bold" }
+  italic = { family = "Fira Code", style = "Italic" }
+  bold_italic = { family = "Fira Code", style = "Bold Italic" }
   size = 14.00
 
 [window]
@@ -53,11 +53,13 @@ general.live_config_reload = true
 # and cursor.background colors, otherwise invert the colors of the cursor.
 # custom_cursor_colors = "true"
 
-# colors:
-#  primary:
-#    background: "#1e2127"
-#    foreground: "#D8DEE9"
+[colors.primary]
+	background = "#0A0E14"
+	foreground = "#B3B1AD"
 
+[colors.cursor]
+	text = "#B3B1AD"
+	cursor = "#E6B450"
 
 
 
@@ -72,7 +74,7 @@ general.live_config_reload = true
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  style = { shape = "Underline", blinking = "On" }
+  style = { shape = "Block", blinking = "On" }
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
 unfocused_hollow = true
