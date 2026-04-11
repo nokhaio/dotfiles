@@ -84,7 +84,7 @@ bindings = [
   { key = "V",        mods = "Control|Shift",  action = "Paste"},
   { key = "V",        mods = "Control",        action = "Paste"},
   { key = "C",        mods = "Control|Shift",  action = "Copy"},
-  { key = "C",        mods = "Control",        action = "Copy"},
+  # { key = "C",        mods = "Control",        action = "Copy"},
   { key = "N",        mods = "Command",        action = "SpawnNewInstance"},
   { key = "Q",        mods = "Alt",            action = "Quit"},
   { key = "Return",   mods = "Alt",            action = "ToggleFullscreen"},
