@@ -107,11 +107,11 @@ alias gww="gcc -Wall -Wextra -Werror"
 alias cww="cc -Wall -Wextra -Werror"
 alias nr="norminette -R CheckForbiddenSourceHeader ."
 
-export PATH="$PATH:/home/nmagomad/.bin/nvim-linux64/bin"
-export PATH="$PATH:/home/nmagomad/.cargo/bin"
+export PATH="$PATH:$HOME/.bin/nvim-linux64/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 alias xps="xclip -se c -o"
 alias ripgrep="grep"
 
-alias francinette=/home/nmagomad/francinette/tester.sh
+alias francinette=$HOME/francinette/tester.sh
 
-alias paco=/home/nmagomad/francinette/tester.sh
+alias paco=$HOME/francinette/tester.sh

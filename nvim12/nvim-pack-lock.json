@@ -1,0 +1,32 @@
+{
+  "plugins": {
+    "blink.cmp": {
+      "rev": "e3523b949badd35ac8553bb975698f8d47b6debd",
+      "src": "https://github.com/saghen/blink.cmp"
+    },
+    "boda.nvim": {
+      "rev": "ae41d8b10c8a8c84a3ef9e0a556fc611e32b8355",
+      "src": "https://github.com/nokhaio/boda.nvim"
+    },
+    "conform.nvim": {
+      "rev": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
+    "lualine.nvim": {
+      "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "mason.nvim": {
+      "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "nvim-lspconfig": {
+      "rev": "d8bf4c47385340ab2029402201d4d7c9f99f437a",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "snacks.nvim": {
+      "rev": "ad9ede6a9cddf16cedbd31b8932d6dcdee9b716e",
+      "src": "https://github.com/folke/snacks.nvim"
+    }
+  }
+}
