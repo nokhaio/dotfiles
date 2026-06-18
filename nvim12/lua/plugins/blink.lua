@@ -1,4 +1,5 @@
-return {
+return
+{
 	snippets = {
 		preset = "default",
 	},
@@ -70,5 +71,4 @@ return {
 		preset = "enter",
 		["<C-y>"] = { "select_and_accept" },
 	},
-
 }
