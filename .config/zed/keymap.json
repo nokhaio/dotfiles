@@ -7,17 +7,23 @@
 // from the command palette.
 [
 	{
+		"context": "Workspace || Editor",
+		"bindings": {
+			"shift shift": "file_finder::Toggle",
+			"ctrl-b": "workspace::ToggleRightDock",
+			"ctrl-j": "workspace::ToggleBottomDock",
+			"ctrl-w": "pane::CloseActiveItem",
+		},
+	},
+	{
 		"context": "Workspace",
 		"bindings": {
 			"shift shift": "file_finder::Toggle",
-			// "ctrl-shift-e": "project_panel::ToggleFocus",
-			"ctrl-shift-e": "project_panel::Toggle",
+			"ctrl-shift-e": "project_panel::ToggleFocus",
 			"ctrl-shift-b": "outline_panel::ToggleFocus",
 			"ctrl-shift-g": "git_panel::ToggleFocus",
-			"ctrl-shift-d": "debug_panel::ToggleFocus",
+			"ctrl-shift-d": "debug_panel::Toggle",
 			"ctrl-alt-b": "workspace::ToggleLeftDock",
-			"ctrl-b": "workspace::ToggleRightDock",
-			"ctrl-j": "workspace::ToggleBottomDock",
 		},
 	},
 	{
@@ -25,8 +31,7 @@
 		"bindings": {
 			"alt-shift-f": "editor::Format",
 			// "alt-j": "terminal_panel::Toggle",
-			"ctrl-j": "terminal_panel::ToggleFocus",
-			"ctrl-w": "pane::CloseActiveItem",
+			// "ctrl-j": "terminal_panel::ToggleFocus",
 			"ctrl-alt-b": "editor::ToggleGitBlameInline",
 		},
 	},
@@ -37,12 +42,12 @@
 			"ctrl-k": "editor::ToggleFocus",
 		},
 	},
-	{
-		"context": "vim_mode == literal",
-		"bindings": {
-			"ctrl-b": ["vim::Literal", ["ctrl-b", "\u0002"]],
-		},
-	},
+	// {
+	// 	"context": "vim_mode == literal",
+	// 	"bindings": {
+	// 		"ctrl-b": ["vim::Literal", ["ctrl-b", "\u0002"]],
+	// 	},
+	// },
 	{
 		"context": "vim_mode == literal",
 		"unbind": {

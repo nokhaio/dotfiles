@@ -2,6 +2,6 @@
 require("lsp.init")
 require("autocmd")
 require("config")
-require("colorscheme")
+-- require("colorscheme")
 require("keymap")
-require("plugins")
+-- require("plugins")
