@@ -32,7 +32,7 @@
 		"bindings": {
 			"alt-shift-f": "editor::Format",
 			// "alt-j": "terminal_panel::Toggle",
-			// "ctrl-j": "terminal_panel::ToggleFocus",
+			"ctrl-j": "terminal_panel::ToggleFocus",
 			"ctrl-alt-b": "editor::ToggleGitBlameInline",
 		},
 	},
