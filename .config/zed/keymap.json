@@ -12,7 +12,9 @@
 			"shift shift": "file_finder::Toggle",
 			"ctrl-b": "workspace::ToggleRightDock",
 			"ctrl-j": "workspace::ToggleBottomDock",
+			"ctrl-l": "workspace::ActivatePaneRight",
 			"ctrl-w": "pane::CloseActiveItem",
+			"ctrl-h": "editor::ToggleFocus",
 		},
 	},
 	{
@@ -23,7 +25,6 @@
 			"ctrl-shift-b": "outline_panel::ToggleFocus",
 			"ctrl-shift-g": "git_panel::ToggleFocus",
 			"ctrl-shift-d": "debug_panel::Toggle",
-			"ctrl-alt-b": "workspace::ToggleLeftDock",
 		},
 	},
 	{
@@ -38,7 +39,7 @@
 	{
 		"context": "Terminal",
 		"bindings": {
-			"Alt-J": "workspace::ToggleZoom",
+			"ctrl-J": "workspace::ToggleZoom",
 			"ctrl-k": "editor::ToggleFocus",
 		},
 	},
